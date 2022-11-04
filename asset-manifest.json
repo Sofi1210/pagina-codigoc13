@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/codigo.c13/static/css/main.b3a985b7.css",
+    "main.js": "/codigo.c13/static/js/main.6111a0ec.js",
+    "static/media/Cocogoose Pro Thin-trial.ttf": "/codigo.c13/static/media/Cocogoose Pro Thin-trial.6440e32616f290a797e9.ttf",
+    "static/media/Cocogoose Pro-trial.ttf": "/codigo.c13/static/media/Cocogoose Pro-trial.fc4c5187ea318bde306b.ttf",
+    "static/media/CódigoC13.png": "/codigo.c13/static/media/CódigoC13.270141014b4d136a5a9a.png",
+    "static/media/logo.png": "/codigo.c13/static/media/logo.a11c81faf44241c89746.png",
+    "index.html": "/codigo.c13/index.html",
+    "static/media/background-footer (1).svg": "/codigo.c13/static/media/background-footer (1).fe8724b5953b2e4217fd.svg",
+    "main.b3a985b7.css.map": "/codigo.c13/static/css/main.b3a985b7.css.map",
+    "main.6111a0ec.js.map": "/codigo.c13/static/js/main.6111a0ec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b3a985b7.css",
+    "static/js/main.6111a0ec.js"
+  ]
+}
