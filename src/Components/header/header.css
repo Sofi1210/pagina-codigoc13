@@ -1,0 +1,133 @@
+/* en esta parte del codigo del codigo solo importaremos y usaremos herramientas para el codigo */
+
+/* Typography */
+
+@font-face {
+    font-family: 'Pro-trial-bold';
+    src: url('../../assets/font/Cocogoose\ Pro-trial.ttf');
+}
+
+/* mode dark light */
+
+#dark{
+    background-color: #121212;
+    color: #ffffff;
+}
+
+#light{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#logo-dark{
+    background-image: url('../../assets/logo.png');
+   width: 200px;
+   height: 50px;
+   background-size: cover;
+  
+}
+
+#logo-light{
+    background-image: url('../../assets/LogoNegro.png');
+    width: 200px;
+    height: 50px;
+    background-size: cover;
+   
+}
+
+/* code principal */
+/* Desde este punto se encuentran todos los styles del header hasta el media query */
+
+
+/* menu top */
+
+.menuTop{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #000000;
+}
+
+#dark .menuTop{
+    border-bottom: 0.5px solid #ffffff;
+}
+
+.session{
+    padding: 10px 10px 10px 10px;
+    border-radius: 50%;
+}
+
+.logo{
+    width: 240px;
+    height: 60px;
+}
+
+/* menu bottom */
+
+.menuBottom{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    border-bottom: 0.5px  solid rgba(0, 0, 0, 0.87);
+}
+
+#dark .menuBottom{
+    background-color: #121212;
+    border-bottom: 0.5px  solid rgba(255, 255, 255, 0.87);
+}
+
+.session{
+    margin: 0px 40px;
+    cursor: pointer;
+}
+
+.items{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: 'Pro-trial-bold';
+    cursor: pointer;
+}
+
+#dark  .items{
+    color: #ffffff;
+}
+
+
+.items:hover{
+    background-color: rgba(0, 0, 0, 0.12);
+    padding: 9px;
+}
+
+#dark .items:hover{
+    background-color: rgba(225, 225, 225, 0.12);
+}
+
+.switchDark{
+    margin: 0px 40px;
+}
+
+
+@media screen and (max-width: 734px) {
+    .menuBottom{
+        gap: 50px;
+    }
+
+    #logo-dark{
+       width: 200px;
+       height: 30px;  
+    }
+    
+    #logo-light{
+        width: 200px;
+        height: 30px;
+    }
+    
+
+}
+

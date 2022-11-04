@@ -1,0 +1,119 @@
+@font-face{
+    font-family: 'light-coco';
+    src: url('../../assets/font/Cocogoose\ Pro\ Thin-trial.ttf');
+}
+
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    /* *background-image: url(../img/background-footer.svg); */
+    background-size: cover;
+    background-color: #0dccac;
+    -webkit-mask-image:url("../../assets/img/background-footer\ \(1\).svg");
+    mask-image:url("../../assets/img/background-footer\ \(1\).svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;
+}
+
+#dark footer{
+    background-color: #1655b2;
+}
+
+.container_footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.caja_footer{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.caja_footer .logo_footer{
+    width: 200px;
+    height: 130px;
+}
+
+
+
+.caja_footer h2{
+    margin-top: 35px;
+    margin-bottom: 30px;
+    color: #000000;
+    font-weight: 700;
+    font-family: 'light-coco';
+    font-size: 14px;
+}
+
+#dark .caja_footer h2{
+    color: #ffffff;
+}
+
+
+
+
+.caja_footer a{
+    margin-top: 10px;
+    color: #000000;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: 'light-coco';
+}
+
+#dark .caja_footer a{
+    color: #ffffff;
+}
+
+.caja_footer a:hover{
+    opacity: 0.8;
+}
+
+.caja_footer a .fab{
+    font-size: 20px;
+}
+
+.box_copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box_copyright p{
+    margin-top: 20px;
+    color: #000000;
+    font-family: 'light-coco';
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#dark .box_copyright p{
+    color: #ffffff;
+}
+
+.box_copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #000000;
+}
+
+#dark .box_copyright hr{
+    background-color: #ffffff;
+}
+
+.redSocial{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.mapa{
+    border-radius: 15px;
+    border: none;
+}

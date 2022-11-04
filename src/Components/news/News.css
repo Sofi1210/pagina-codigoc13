@@ -1,0 +1,67 @@
+@font-face{
+    font-family: 'cocogoose-plus';
+    src: url('../../assets/font/Cocogoose\ Pro-trial.ttf')
+}
+
+@font-face{
+    font-family: 'cocogoose-light';
+    src: url('../../assets/font/Cocogoose\ Pro\ Thin-trial.ttf')
+}
+
+.conenedorNews{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    padding: 24px;
+    gap: 12px;
+    scroll-padding: 24px;
+    align-items: center;
+}
+
+.cardNews{
+    margin-top: 40px 0px 50px 0px;
+    padding: 20px;
+    max-width: 700px;
+    height: 420px;
+    margin-left: 24px;
+    border-radius: 0.5px;
+    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+
+#dark .cardNews{
+    background-color: RGB(53, 52, 52);
+}
+
+.imgNews{
+    width: 400px;
+    border-radius: 1px;
+}
+
+.titleNews{
+    font-family: 'cocogoose-plus';
+    font-size: 14px;
+}
+
+.contentNews{
+    margin-top: 10px;
+}
+
+.descriptionNews{
+    width: 400px;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+
+.datesUs{
+    display: flex;
+    gap: 200px;
+}
+
+.fi{
+    font-size: 13px;
+    color: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,47 @@
+.contentAcordeon{
+    width: 95%;
+    margin: 40px;
+}
+
+#light .accordion{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+#dark .accordion{
+    background-color: #353434;
+}
+
+#light .contentAcordeon{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#dark .contentAcordeon{
+    background-color: #252424;
+}
+
+#light.textContent{
+   background-color: #ffffff;
+}
+
+#dark .textContent{
+    background-color: #121212;
+}
+
+#dark .Icon{
+    color: #ffffff;
+}
+
+#dark .title{
+    color: #ffffff;
+}
+
+#dark .text{
+    color: #ffffff;
+}
+
+@media  screen and (max-width: 734px){
+
+    .contentAcordeon{
+        width: 80%;
+    }
+}

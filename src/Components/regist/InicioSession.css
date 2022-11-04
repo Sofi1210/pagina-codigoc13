@@ -1,0 +1,52 @@
+/* login */
+
+
+.content-dv-4x {
+    width: 454px;
+    height: 400px;
+    background-color: #ffffff;
+    z-index: auto;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 6px 0px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: none;
+  }
+  
+  .img-lg-ln {
+    width: 200px;
+  }
+  
+  .ipt-lg {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ouput {
+    display: flex;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 10px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid black;
+  }
+  
+  .ln-txt-9 {
+    font-family: "FuenteThink-trial";
+    font-size: 14px;
+  }
+  
+  .swal2-styled.swal2-confirm {
+    border: 0;
+    border-radius: 0.25em;
+    background: initial;
+    background-color: #ffcb05;
+    color: #000;
+    font-size: 1em;
+    font-weight: bolder;
+  }

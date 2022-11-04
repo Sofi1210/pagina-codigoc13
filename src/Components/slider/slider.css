@@ -1,0 +1,18 @@
+.images{
+    height:700px;
+    background-size: cover;
+}
+
+.nav{
+    margin: 0px 20px;
+}
+
+svg{
+    width: 15px;
+}
+
+@media screen and (max-width: 734px){
+    .images{
+        height: 200px;
+    }
+}
