@@ -3,7 +3,7 @@ import './News.css'
 
 const News = () => {
 
-  const [News,setNews] = useState([]);
+  const [newsData,setNews] = useState([]);
   const fetchNews = async () =>{
 
     let response = await fetch(`https://crudcrud.com/api/${process.env.REACT_APP_KEY_CRUD}/news`);
@@ -19,26 +19,26 @@ const News = () => {
 
   return (
     
-    News.map(News => (
+    newsData.map(newInfo => (
 
     <div className="conenedorNews">
 
-      <div className="cardNews" key={News.id}>
+      <div className="cardNews" key={newInfo.id}>
 
         <div className="divImgNews">
-            <img className='imgNews' src={News.imagen} alt={News.title}/>
+            <img className='imgNews' src={newInfo.imagen} alt={newInfo.title}/>
         </div>
 
         <div className="contentNews">
-            <h3 className='titleNews' id='titleNews'>{News.title}</h3>
+            <h3 className='titleNews' id='titleNews'>{newInfo.title}</h3>
 
             <p className='descriptionNews' id='descriptionNews'>
-                {News.descripcion}
+                {newInfo.descripcion}
             </p>
             
             <div className='datesUs'>
-                <p className='dataNews fi'>{News.date}</p>
-                <p className='author fi'>{News.autor}</p>
+                <p className='dataNews fi'>{newInfo.date}</p>
+                <p className='author fi'>{newInfo.autor}</p>
             </div>
         </div>
 
