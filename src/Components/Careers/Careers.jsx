@@ -1,28 +1,27 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './careers.css';
 import { Backpack, PaintBucket } from "phosphor-react";
 import Avatar from '@mui/material/Avatar';
-// , {useEffect, useState}
 
 const Careers = () => {
 
-  // const [careersData,setCareers] = useState([]);
-  // const fetchCareers = async () =>{
+  const [careersData,setCareers] = useState([]);
+  const fetchCareers = async () =>{
 
-  //   let response = await fetch(`https://crudcrud.com/api/${process.env.REACT_APP_KEY_CRUD}/Carrers`);
+    let response = await fetch(`https://crudcrud.com/api/${process.env.REACT_APP_KEY_CRUD}/Carrers`);
 
-  //   let data = await response.json();
-  //    setCareers(data)
+    let data = await response.json();
+     setCareers(data)
 
-  // }
+  }
 
-  // useEffect(() => {
-  //   fetchCareers()
-  // }, [])
+  useEffect(() => {
+    fetchCareers()
+  }, [])
   
   return (
     
-    // careersData.length===0?<h1>No hay carreras</h1>: careersData.map(Career => (
+    careersData.length===0?<h1>No hay carreras</h1>: careersData.map(Career => (
 
        <div className='container-principal-div'>
 
@@ -61,7 +60,7 @@ const Careers = () => {
 
         </div>
        </div>
-          // ))
+          ))
     
      
   )
