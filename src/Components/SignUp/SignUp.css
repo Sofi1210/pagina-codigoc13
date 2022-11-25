@@ -1,0 +1,75 @@
+.container-Campus{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    margin-top: 20px;
+}
+
+.go{
+    display: flex;
+    flex-direction: column;
+}
+
+.pe{
+    width: 335px;
+    height: 38px;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+.btn-signup {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.recupertion-checkbox{
+    display: flex;
+    align-items: center;
+}
+
+
+.recupertation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    color: black;
+}
+
+.rem{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+.btn{
+    text-align: center;
+    font-size: 15px;
+}
+
+.icon-google{
+    width: 32px;
+}
+
+#iniciar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+#iniciar-google{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.campus::placeholder{
+    text-align: center;
+}
+
+.title-campus{
+    font-size: 14px;
+}
