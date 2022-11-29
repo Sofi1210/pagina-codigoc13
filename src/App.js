@@ -6,6 +6,7 @@ import Careers from "./Components/Careers/Careers";
 import News from "./Components/news/News";
 import SimpleAccordion from "./Components/we/AboutUS";
 import Footer from "./Components/Footer/Footer";
+import Form from "./Components/form/Form";
 
 export const themeContext = createContext(null)
 
@@ -23,6 +24,7 @@ function App() {
       <Careers/>
       <News/>
       <SimpleAccordion/>
+      <Form/>
       <Footer/>
     </div>
     </themeContext.Provider>
