@@ -2,10 +2,8 @@ import React, { useContext, useState } from "react";
 import { themeContext } from "../../App";
 import "./header.css";
 import Switch from "@mui/material/Switch";
-import News from "../news/News";
-import We from "../we/AboutUS"
-import Careers from "../Careers/Careers";
 import SignUp from "../SignUp";
+import { Link } from "react-router-dom";
 
 const label = { inputProps: { "aria-label": "Switch demo" } };
 
@@ -36,15 +34,19 @@ const Header = () => {
 
         <div className="menuBottom">
 
-          <a href={Careers} aria-label="items" className="items">
+          <Link to='/' aria-label="items" className="items">
+            Inicio
+          </Link>
+
+          <Link to='/Careers' aria-label="items" className="items">
             Carreras
-          </a>
-          <a href={News} aria-label="items" className="items">
+          </Link>
+          <Link to='/News' aria-label="items" className="items">
             Noticias
-          </a>
-          <a href={We} aria-label="items" className="items">
+          </Link>
+          <Link to='/AboutUs' aria-label="items" className="items">
             Nosotros
-          </a>
+          </Link>
           
         </div>
       </section>

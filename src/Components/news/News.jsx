@@ -1,15 +1,28 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useState, useContext} from 'react'
+import { themeContext } from '../../App';
+import axios from 'axios';
 import './News.css'
 
 const News = () => {
 
   const [newsData,setNews] = useState([]);
+  const { theme, setTheme } = useContext(themeContext);
   const fetchNews = async () =>{
 
-    let response = await fetch(`https://crudcrud.com/api/${process.env.REACT_APP_KEY_CRUD}/news`);
+    let headersList = {
+    "Accept": "*/*",
+    "User-Agent": "Thunder Client (https://www.thunderclient.com)" 
+    }
 
-    let data = await response.json();
-     setNews(data.results);
+    let reqOptions = {
+      url: "https://c13-app-back-sm.herokuapp.com/api/novelties?lot=adf",
+      method: "GET",
+      headers: headersList,
+    }
+
+    let response = await axios.request(reqOptions);
+    setNews(response.data.novelties);
+    console.log(theme)
   }
 
   useEffect(() => {
@@ -18,34 +31,36 @@ const News = () => {
   
 
   return (
-    
-    newsData.map(newInfo => (
+    <div className="contedorNews">
+   
 
-    <div className="conenedorNews">
+     {
+     newsData.map(newInfo => (
 
       <div className="cardNews" key={newInfo.id}>
 
         <div className="divImgNews">
-            <img className='imgNews' src={newInfo.imagen} alt={newInfo.title}/>
+            <img className='imgNews' src={newInfo.img} alt={newInfo.title}/>
         </div>
 
         <div className="contentNews">
             <h3 className='titleNews' id='titleNews'>{newInfo.title}</h3>
 
             <p className='descriptionNews' id='descriptionNews'>
-                {newInfo.descripcion}
+                {newInfo.description}
             </p>
             
             <div className='datesUs'>
-                <p className='dataNews fi'>{newInfo.date}</p>
-                <p className='author fi'>{newInfo.autor}</p>
+                <p className='dataNews fi'>{newInfo.createdAt}</p>
+                <p className='author fi'>{newInfo.user.username}</p>
             </div>
         </div>
 
       </div>
-    </div>
-    ))
     
+    ))
+    }
+    </div>
   )
 }
 

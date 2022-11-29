@@ -2,16 +2,26 @@ import React, {useEffect, useState} from 'react';
 import './careers.css';
 import { Backpack, PaintBucket } from "phosphor-react";
 import Avatar from '@mui/material/Avatar';
+import axios from 'axios';
 
 const Careers = () => {
 
   const [careersData,setCareers] = useState([]);
   const fetchCareers = async () =>{
 
-    let response = await fetch(`https://crudcrud.com/api/${process.env.REACT_APP_KEY_CRUD}/Carrers`);
-
-    let data = await response.json();
-     setCareers(data)
+    let headersList = {
+     "Accept": "*/*",
+     "User-Agent": "Thunder Client (https://www.thunderclient.com)" 
+    }
+    
+    let reqOptions = {
+      url: "https://c13-app-back-sm.herokuapp.com/api/careers",
+      method: "GET",
+      headers: headersList,
+    }
+    
+    let response = await axios.request(reqOptions);
+    setCareers(response.data.careers);
 
   }
 
