@@ -1,6 +1,7 @@
-import React, {useEffect, useState} from 'react'
-import './careers.css'
-
+import React, {useEffect, useState} from 'react';
+import './careers.css';
+import { Backpack, PaintBucket } from "phosphor-react";
+import Avatar from '@mui/material/Avatar';
 
 const Careers = () => {
 
@@ -22,24 +23,43 @@ const Careers = () => {
     
     careersData.length===0?<h1>No hay carreras</h1>: careersData.map(Career => (
 
-        <div className="card">
-          <div className="face front">
-            <img
-              src={Career.image}
-              alt={Career.name}
-            />
-    
-            <h3>{Career.name}</h3>
-          </div>
-          <div className="face back">
-            <h3>{Career.name}</h3>
-            <p>{Career.teacher}</p>
-            <p>{Career.skill}</p>
-            <div className="link">
-              <p>{Career.descripcion}</p>
+       <div className='container-principal-div'>
+
+        <h1><Backpack size={32} />Aprender</h1>
+        <div className="cardCareers">
+
+          <div className='career-div-container'>
+
+            <div className="program-card-container-div">
+
+              <div className='card-image-container-program'>
+
+                <img  className="Img-program" src='https://images.unsplash.com/photo-1664575197229-3bbebc281874?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80' alt="Holi"/>
+
+              </div>
+
+              <div  className='card-info-container-program'>
+
+                <h4 className='NameProgram'><PaintBucket size={32}/>FrontEnd</h4>
+
+                <p className='description'>Descripción</p>
+
+                <div className='skills'>
+                  skills
+                </div>
+
+                <div className='container-info-container-theacher'>
+                  <Avatar alt="Jemy Sharp" src="/static/images/avatar/1.jpg" />
+                  <h5 className='theacher'>Jhonier Mosquera</h5>
+                </div>
+
+              </div>
+
             </div>
           </div>
+
         </div>
+       </div>
           ))
     
      
