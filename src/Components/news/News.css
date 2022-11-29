@@ -10,24 +10,24 @@
 
 .contedorNews{
     width: 100%;
-    height: 80vh;
+    height: auto;
     display: flex;
-    overflow: auto;
-    scroll-snap-type: x mandatory;
     padding: 24px;
     gap: 12px;
-    scroll-padding: 24px;
-    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .cardNews{
     margin-top: 40px 0px 50px 0px;
     padding: 20px;
-    max-width: 700px;
+    max-width: 463px;
     height: 420px;
     margin-left: 24px;
     border-radius: 0.5px;
-    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+    box-shadow: 1px 7px 20px 5px rgb(0 0 0 / 20%),
+     0px 1px 1px 0px rgb(0 0 0 / 14%), 
+     0px 1px 3px 0px rgb(0 0 0 / 12%);
 }
 
 #dark .cardNews{
