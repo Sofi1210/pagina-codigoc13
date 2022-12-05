@@ -1,46 +1,54 @@
-import React from 'react'
-import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import * as React from 'react';
+import useScrollTrigger from '@mui/material/useScrollTrigger';
+import Box from '@mui/material/Box';
+import Fab from '@mui/material/Fab';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import Fade from '@mui/material/Fade';
 
-let basicScrollTop = function () {
+function ScrollTop(props) {
+  const { children, window } = props;
+  // Note that you normally won't need to set the window ref as useScrollTrigger
+  // will default to window.
+  // This is only being set here because the demo is in an iframe.
+  const trigger = useScrollTrigger({
+    target: window ? window() : undefined,
+    disableHysteresis: true,
+    threshold: 100,
+  });
 
-    let btnTop = document.querySelector("#goTop");
-  
-    let btnReveal = function () {
-      if (window.scrollY >= 100) {
-        btnTop.classList.add("is-visible");
-      } else {
-        btnTop.classList.remove("is-visible");
-      }
-    };
-  
-    let TopscrollTo = function () {
-      if (window.scrollY !== 0) {
-        setTimeout(function () {
-          window.scrollTo(0, window.scrollY - 30);
-          TopscrollTo();
-        }, 5);
-      }
-    };
-  
-    window.addEventListener("scroll", btnReveal);
-    btnTop.addEventListener("click", TopscrollTo);
+  const handleClick = (event) => {
+    const anchor = (event.target.ownerDocument || document).querySelector(
+      '#back-to-top-anchor',
+    );
+
+    if (anchor) {
+      anchor.scrollIntoView({
+        block: 'center',
+      });
+    }
   };
-  
-  basicScrollTop();
-  
-  const toggleButton = document.getElementById(`toggle-button`);
-  
-  toggleButton.addEventListener('change', () => {
-  
-      document.body.classList.toggle('dark')
-  
-    })
 
-
-const Totop = () => {
   return (
-    <ArrowUpwardIcon id="goTop"/>
-  )
+    <Fade in={trigger}>
+      <Box
+        onClick={handleClick}
+        role="presentation"
+        sx={{ position: 'fixed', bottom: 16, right: 16 }}
+      >
+        {children}
+      </Box>
+    </Fade>
+  );
 }
 
-export default Totop
+export default function BackToTop(props) {
+  return (
+    <React.Fragment>
+      <ScrollTop {...props}>
+        <Fab size="small" aria-label="scroll back to top">
+          <KeyboardArrowUpIcon />
+        </Fab>
+      </ScrollTop>
+    </React.Fragment>
+  );
+}

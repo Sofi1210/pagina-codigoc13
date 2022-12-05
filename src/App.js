@@ -1,32 +1,38 @@
-import React,{createContext, useState} from "react";
-import './App.css';
+import React, { createContext, useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
 import Header from "./Components/header/Header";
-import Slideshow from "./Components/slider/Slider";
 import Careers from "./Components/Careers/Careers";
 import News from "./Components/news/News";
 import SimpleAccordion from "./Components/we/AboutUS";
 import Footer from "./Components/Footer/Footer";
 import Form from "./Components/form/Form";
+import useScrollTrigger from "@mui/material/useScrollTrigger";
+import Totop from "./Components/Totop";
+import Home from "./Components/Home/Home";
 
-export const themeContext = createContext(null)
+export const themeContext = createContext(null);
 
 function App() {
-
-  const [theme, setTheme] = useState("light")
+  const [theme, setTheme] = useState("light");
+  const trigger = useScrollTrigger();
 
   return (
-    
-    <themeContext.Provider value={{theme,setTheme}}>
-    <div className="App" id={theme}>    
-
+    <themeContext.Provider value={{ theme, setTheme }}>
+      <div className="App" id={theme} in={!trigger}> 
       <Header/>
-      <Slideshow/>
-      <Careers/>
-      <News/>
-      <SimpleAccordion/>
-      <Form/>
-      <Footer/>
-    </div>
+      <Routes>
+
+        <Route path="/" element={<Home/>}/>
+        <Route path="/Careers" element={<Careers />} />
+        <Route path="/News" element={<News />} />
+        <Route path="/AboutUs" element={<SimpleAccordion />} />
+
+      </Routes>
+
+      <Footer />
+      <Totop />
+      </div>
     </themeContext.Provider>
   );
 }

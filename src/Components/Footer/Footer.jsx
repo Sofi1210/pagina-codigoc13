@@ -11,26 +11,26 @@ const Footer = () => {
   return (
     <div>
       <footer id="contactos">
-        <div class="container_footer">
-          <div class="caja_footer">
+        <div className="container_footer">
+          <div className="caja_footer">
             <div>
-              <img class="logo_footer" src={logoFooter} alt="" />
+              <img className="logo_footer" src={logoFooter} alt="" />
             </div>
           </div>
 
-          <div class="caja_footer">
+          <div className="caja_footer">
             <h2>Direccion</h2>
-            <iframe title="Sonbata" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245.51250464176056!2d-75.62659601452677!3d6.251787974558109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442bcd61c84c01%3A0xc5c580cf1f268a80!2sCentro%20Cultural%20Son%20Bat%C3%A1%20-%20My%20Palenque!5e1!3m2!1ses-419!2sco!4v1667491357874!5m2!1ses-419!2sco"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className="mapa"></iframe>
+            <iframe title="Sonbata" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245.51250464176056!2d-75.62659601452677!3d6.251787974558109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442bcd61c84c01%3A0xc5c580cf1f268a80!2sCentro%20Cultural%20Son%20Bat%C3%A1%20-%20My%20Palenque!5e1!3m2!1ses-419!2sco!4v1667491357874!5m2!1ses-419!2sco"  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="mapa"></iframe>
 
             <a href="https://www.google.com/maps/place/Centro+Cultural+Son+Bat%C3%A1+-+My+Palenque
             /@6.2518966,-75.626747,17z/data=!4m10!1m2!2m1!1scentro+cultural+mi+palenque!3m6!1s0x8e
             442bcd61c84c01:0xc5c580cf1f268a80!8m2!3d6.251783!4d-75.6266217!15sChtjZW50cm8gY3VsdHVy
             YWwgbWkgcGFsZW5xdWWSARBlZHVjYXRpb25fY2VudGVy4AEA!16s%2Fg%2F11p0dh9z9t">
-              Cra. 115 # 38 BD, 8Medellín, Antioquia <i class="fa-solid fa-location-dot"></i>
+              Cra. 115 # 38 BD, 8Medellín, Antioquia <i className="fa-solid fa-location-dot"></i>
             </a>
           </div>
 
-          <div class="caja_footer">
+          <div className="caja_footer">
             <h2>Redes Sociales</h2>
             <a className="redSocial" href="https://www.instagram.com/codigo_c13/">
             <InstagramIcon size={32} />Instagram
@@ -44,7 +44,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <div class="box_copyright">
+        <div className="box_copyright">
           <hr />
           <p>Todos los derechos reservados © 2022 J-JS-I</p>
         </div>
