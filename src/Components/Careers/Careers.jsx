@@ -6,12 +6,12 @@ import axios from 'axios';
 
 const Careers = () => {
 
-  const [careersData,setCareers] = useState([]);
-  const fetchCareers = async () =>{
+    const [careersData,setCareers] = useState([]);
+    const fetchCareers = async () =>{
 
     let headersList = {
-     "Accept": "*/*",
-     "User-Agent": "Thunder Client (https://www.thunderclient.com)" 
+    "Accept": "*/*",
+    "User-Agent": "Thunder Client (https://www.thunderclient.com)" 
     }
     
     let reqOptions = {
@@ -33,7 +33,7 @@ const Careers = () => {
     
     careersData.length===0?<h1>No hay carreras</h1>: careersData.map(Career => (
 
-       <div className='container-principal-div'>
+    <div className='container-principal-div'>
 
         <h1><Backpack size={32} />Aprender</h1>
         <div className="cardCareers">
@@ -53,26 +53,19 @@ const Careers = () => {
                 <h4 className='NameProgram'><PaintBucket size={32}/>FrontEnd</h4>
 
                 <p className='description'>Descripción</p>
-
                 <div className='skills'>
                   skills
                 </div>
-
                 <div className='container-info-container-theacher'>
                   <Avatar alt="Jemy Sharp" src="/static/images/avatar/1.jpg" />
                   <h5 className='theacher'>Jhonier Mosquera</h5>
                 </div>
-
               </div>
-
             </div>
           </div>
-
         </div>
-       </div>
-          ))
-    
-     
+      </div>
+    )) 
   )
 }
 

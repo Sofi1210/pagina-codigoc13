@@ -13,6 +13,7 @@ import Home from "./Components/Home/Home";
 export const themeContext = createContext(null);
 
 function App() {
+
   const [theme, setTheme] = useState("light");
   const trigger = useScrollTrigger();
 
@@ -22,7 +23,7 @@ function App() {
       <Header />
       <Routes>
 
-        <Route path="/" element={<Home/>}/>
+        <Route path="/Home" element={<Home />}/>
         <Route path="/Careers" element={<Careers />} />
         <Route path="/News" element={<News />} />
         <Route path="/AboutUs" element={<SimpleAccordion />} />
