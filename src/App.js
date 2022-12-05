@@ -23,7 +23,7 @@ function App() {
       <Header />
       <Routes>
 
-        <Route path="/Home" element={<Home />}/>
+        <Route path="/" element={<Home />}/>
         <Route path="/Careers" element={<Careers />} />
         <Route path="/News" element={<News />} />
         <Route path="/AboutUs" element={<SimpleAccordion />} />
