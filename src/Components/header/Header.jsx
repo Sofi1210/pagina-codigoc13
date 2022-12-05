@@ -34,7 +34,7 @@ const Header = () => {
 
         <div className="menuBottom">
 
-          <Link to='/' aria-label="items" className="items">
+          <Link to='/Home' aria-label="items" className="items">
             Inicio
           </Link>
 

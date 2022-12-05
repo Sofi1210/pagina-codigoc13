@@ -35,7 +35,7 @@ const News = () => {
    
 
      {
-     newsData.map(newInfo => (
+     newsData.length===0?<h1>No hay Noticias</h1>: newsData.map(newInfo => (
 
       <div className="cardNews" key={newInfo.id}>
 
