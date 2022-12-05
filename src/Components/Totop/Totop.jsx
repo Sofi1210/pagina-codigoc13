@@ -14,6 +14,7 @@ function ScrollTop(props) {
     target: window ? window() : undefined,
     disableHysteresis: true,
     threshold: 100,
+    top: 0,
   });
 
   const handleClick = (event) => {
