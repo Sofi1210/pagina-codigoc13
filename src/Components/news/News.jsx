@@ -15,7 +15,7 @@ const News = () => {
     }
 
     let reqOptions = {
-      url: "https://c13-app-back-sm.herokuapp.com/api/novelties?lot=adf",
+      url: "https://c13-app-back.up.railway.app/api/novelties",
       method: "GET",
       headers: headersList,
     }

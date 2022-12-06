@@ -23,6 +23,7 @@ function App() {
       <Header />
       <Routes>
 
+        <Route exact path="/" element={<Home />}/>
         <Route path="/Home" element={<Home />}/>
         <Route path="/Careers" element={<Careers />} />
         <Route path="/News" element={<News />} />
