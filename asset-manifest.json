@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/codigo.c13/static/css/main.242ab8b6.css",
-    "main.js": "/codigo.c13/static/js/main.200aa378.js",
+    "main.css": "/codigo.c13/static/css/main.e19be6ef.css",
+    "main.js": "/codigo.c13/static/js/main.0f1c0f50.js",
     "static/media/Cocogoose Pro Thin-trial.ttf": "/codigo.c13/static/media/Cocogoose Pro Thin-trial.6440e32616f290a797e9.ttf",
     "static/media/Cocogoose Pro-trial.ttf": "/codigo.c13/static/media/Cocogoose Pro-trial.fc4c5187ea318bde306b.ttf",
     "static/media/CódigoC13.png": "/codigo.c13/static/media/CódigoC13.270141014b4d136a5a9a.png",
@@ -9,11 +9,11 @@
     "static/media/icons8-logo-de-google.svg": "/codigo.c13/static/media/icons8-logo-de-google.9a7800d06783d80a1c12249a8ca58e9d.svg",
     "index.html": "/codigo.c13/index.html",
     "static/media/background-footer (1).svg": "/codigo.c13/static/media/background-footer (1).299b8163021c422357a6.svg",
-    "main.242ab8b6.css.map": "/codigo.c13/static/css/main.242ab8b6.css.map",
-    "main.200aa378.js.map": "/codigo.c13/static/js/main.200aa378.js.map"
+    "main.e19be6ef.css.map": "/codigo.c13/static/css/main.e19be6ef.css.map",
+    "main.0f1c0f50.js.map": "/codigo.c13/static/js/main.0f1c0f50.js.map"
   },
   "entrypoints": [
-    "static/css/main.242ab8b6.css",
-    "static/js/main.200aa378.js"
+    "static/css/main.e19be6ef.css",
+    "static/js/main.0f1c0f50.js"
   ]
 }
