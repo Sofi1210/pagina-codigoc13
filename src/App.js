@@ -29,6 +29,7 @@ function App() {
         <Route path="/Careers" element={<Careers />} />
         <Route path="/News" element={<News />} />
         <Route path="/AboutUs" element={<SimpleAccordion />} />
+        <Route path="/Form" element={<Form />}/>
 
       </Routes>
 

@@ -14,7 +14,7 @@ const Form = () => {
         setPassword("")
     }
 return (
-    <div>
+    <div className="form-content">
     <div class="formulario">
         <h2>Form</h2>
         <form  onSubmit={showAlert}>

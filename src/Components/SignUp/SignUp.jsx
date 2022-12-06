@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import google from '../../assets/img/icons8-logo-de-google.svg';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import { Link } from "react-router-dom";
 
 
 const style = {
@@ -70,7 +71,7 @@ export default function BasicModal() {
             </div>
 
             <div>
-              <a className="btn-regist pe" id="iniciar" href='Hola'>Registrarse</a>
+              <Link to="/Form" className="btn-regist pe" id="iniciar" href='Hola'>Registrarse</Link>
             </div>
                 
         </div>
