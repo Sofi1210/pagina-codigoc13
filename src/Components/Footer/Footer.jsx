@@ -36,7 +36,7 @@ const Footer = () => {
             <InstagramIcon size={32} />Instagram
             
             </a>
-            <a className="redSocial" href="https://github.com/JHONASPRILLA" target="_black">
+            <a className="redSocial" href="https://www.facebook.com/sonbatac13">
             <FacebookIcon size={32} /> Facebook
             </a>
             <a className="redSocial" href="https://mail.google.com/mail/u/2/?pli=1#inbox?compose=new" target="_black">

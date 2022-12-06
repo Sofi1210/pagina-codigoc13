@@ -6,6 +6,7 @@ import Careers from "./Components/Careers/Careers";
 import News from "./Components/news/News";
 import SimpleAccordion from "./Components/we/AboutUS";
 import Footer from "./Components/Footer/Footer";
+import Form from "./Components/form/Form";
 import useScrollTrigger from "@mui/material/useScrollTrigger";
 import Totop from "./Components/Totop";
 import Home from "./Components/Home/Home";
@@ -20,7 +21,7 @@ function App() {
   return (
     <themeContext.Provider value={{ theme, setTheme }}>
       <div className="App" id={theme} in={!trigger}> 
-      <Header />
+      <Header/>
       <Routes>
 
         <Route exact path="/" element={<Home />}/>
