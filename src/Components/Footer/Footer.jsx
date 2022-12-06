@@ -32,14 +32,14 @@ const Footer = () => {
 
           <div className="caja_footer">
             <h2>Redes Sociales</h2>
-            <a className="redSocial" href="https://www.instagram.com/codigo_c13/">
+            <a className="redSocial" href="https://www.instagram.com/codigo_c13/" target="_black">
             <InstagramIcon size={32} />Instagram
             
             </a>
             <a className="redSocial" href="https://www.facebook.com/sonbatac13">
             <FacebookIcon size={32} /> Facebook
             </a>
-            <a className="redSocial" href="https://mail.google.com/mail/u/2/?pli=1#inbox?compose=new">
+            <a className="redSocial" href="https://mail.google.com/mail/u/2/?pli=1#inbox?compose=new" target="_black">
             <MailOutlineIcon size={32} /> Gmail
             </a>
           </div>

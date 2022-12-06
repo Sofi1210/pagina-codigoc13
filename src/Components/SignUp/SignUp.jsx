@@ -10,8 +10,8 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 const style = {
   position: 'absolute',
-  top: '36%',
-  left: '21%',
+  top: '50%',
+  left: '50%',
   transform: 'translate(-50%, -50%)',
   width: 400,
   bgcolor: 'background.paper',
@@ -65,8 +65,12 @@ export default function BasicModal() {
             </div>
             
             <div className='btn-signup go'>
-                <buttom className="btn pe" id="iniciar">Iniciar Sesión</buttom>
-                <buttom className="btn pe" id="iniciar-google"><img  className="icon-google" src={google} alt="google"/>Ingresar con Google</buttom>
+                <a className="btn pe" id="iniciar" href="Hola">Iniciar Sesión</a>
+                <a className="btn pe" id="iniciar-google" href="Hola"><img  className="icon-google" src={google} alt="google"/>Google</a>
+            </div>
+
+            <div>
+              <a className="btn-regist pe" id="iniciar" href='Hola'>Registrarse</a>
             </div>
                 
         </div>
