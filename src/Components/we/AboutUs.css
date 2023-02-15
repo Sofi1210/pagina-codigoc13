@@ -1,47 +1,46 @@
-.contentAcordeon{
-    width: 95%;
-    margin: 40px;
+.contentAcordeon {
+  width: 95%;
+  margin: 40px;
 }
 
-#light .accordion{
-    background-color: rgba(255, 255, 255, 0.7);
+#light .accordion {
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
-#dark .accordion{
-    background-color: #353434;
+#dark .accordion {
+  background-color: #9a73d0;
 }
 
-#light .contentAcordeon{
-    background-color: rgba(255, 255, 255, 0.5);
+#light .contentAcordeon {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
-#dark .contentAcordeon{
-    background-color: #252424;
+#dark .contentAcordeon {
+  background-color: #252424;
 }
 
-#light.textContent{
-   background-color: #ffffff;
+#light.textContent {
+  background-color: #ffffff;
 }
 
-#dark .textContent{
-    background-color: #121212;
+#dark .textContent {
+  background-color: #121212;
 }
 
-#dark .Icon{
-    color: #ffffff;
+#dark .Icon {
+  color: #ffffff;
 }
 
-#dark .title{
-    color: #ffffff;
+#dark .title {
+  color: #ffffff;
 }
 
-#dark .text{
-    color: #ffffff;
+#dark .text {
+  color: #ffffff;
 }
 
-@media  screen and (max-width: 734px){
-
-    .contentAcordeon{
-        width: 80%;
-    }
+@media screen and (max-width: 734px) {
+  .contentAcordeon {
+    width: 80%;
+  }
 }

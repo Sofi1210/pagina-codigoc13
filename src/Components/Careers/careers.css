@@ -34,7 +34,7 @@
  }
 
  PaintBucket{
-    background-color: goldenrod;
+    background-color: rgb(218, 32, 206);
     color: black;
     padding: 10px;
  }
